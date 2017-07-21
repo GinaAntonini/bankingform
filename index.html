@@ -3,54 +3,87 @@
 <head>
 	<title>Banking Form</title>
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Gloria+Hallelujah|Lobster|Pacifico|Permanent+Marker|Vibur" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header>
-	<h1 class="sitename">Loan Application</h1>
-</header>
-<div id="wrapper">
 	<header>
-		<h1>Personal Information</h1>
+		<h1 class="sitename">Loan Application</h1>
 	</header>
-	<form>
-		Applicant First Name: <input type="text" name="firstname"><br><br>
-		Applicant Middle Initial: <input type="text" name="middleinitial"><br><br>
-		Applicant Last Name: <input type="text" name="lastname"><br><br>
-		Applicant Address: <input type="text" name="address"><br><br>
-		Applicant Occupation: <input type="text" name="occupation"><br><br>
-		Applicant Employer: <input type="text" name="employer"><br><br>
-		Employer Address: <input type="text" name="employeraddress"><br><br>
-	</form>
-	<form>
-		Type of Loan:
-		<select>
-		<option value="commercial">Commercial</option>
-		<option value="realestate">Real Estate</option>
-		<option value="personal">Personal</option>
-		<option value="mortgage">Mortgage</option>
-		</select><br><br>
-		Requested Amount of Loan: <input type="text" name="amountofloan"><br><br>
-		How long is your loan term? <br>
-		<input type="radio" name="time" value="5">5 Years<br><br>
-		<input type="radio" name="time" value="15">15 Years<br><br>
-		<input type="radio" name="time" value="30">30 Years<br><br>
+	<div id="wrapper">
+		<header>
+			<h1>Personal Information</h1>
+		</header>
+		<form>
+			Applicant First Name: <input name="firstname" type="text"><br>
+			<br>
+			Applicant Middle Initial: <input name="middleinitial" type="text"><br>
+			<br>
+			Applicant Last Name: <input name="lastname" type="text"><br>
+			<br>
+			Applicant Address: <input name="address" type="text"><br>
+			<br>
+			Applicant Occupation: <input name="occupation" type="text"><br>
+			<br>
+			Applicant Employer: <input name="employer" type="text"><br>
+			<br>
+			Employer Address: <input name="employeraddress" type="text"><br>
+			<br>
+		</form>
+		<header>
+			<h1>Loan Information</h1>
+		</header>
+		<form>
+			Type of Loan: <select>
+				<option value="commercial">
+					Commercial
+				</option>
+				<option value="realestate">
+					Real Estate
+				</option>
+				<option value="personal">
+					Personal
+				</option>
+				<option value="mortgage">
+					Mortgage
+				</option>
+			</select><br>
+			<br>
+			Requested Amount of Loan: <input name="amountofloan" type="text"><br>
+			<br>
+			How long is your loan term?<br>
+			<br>
+			<input name="time" type="radio" value="5"> 5 Years<br>
+			<br>
+			<input name="time" type="radio" value="15"> 15 Years<br>
+			<br>
+			<input name="time" type="radio" value="30"> 30 Years<br>
+			<br>
+			<br>
+			Check All That Apply:<br>
+			<br>
+			<input name="qualifier" type="checkbox" value="downpayment"> I have a down payment<br>
+			<input name="qualifier" type="checkbox" value="outofstate"> Out-of-state resident<br>
+			<input name="qualifier" type="checkbox" value="married"> Married<br>
+			<input name="qualifier" type="checkbox" value="co-signed"> Loan will be co-signed<br>
+			<br>
+		</form>
+		<header>
+			<h1>Contact Information</h1>
+		</header>
+		<form>
+			Additional Comments:<br>
+			<input id="textarea" name="comments" type="textarea"><br>
+			<br>
+			Applicant email address: <input name="emailaddress" type="email"><br>
+			<br>
+			Applicant telephone number: <input name="telephone" type="telephone"><br>
+			<br>
+			Applicant LinkedIn URL: <input name="linkedin" type="text"><br>
+			<br>
+		</form><input type="submit" value="Submit">
 		<br>
-		Check All That Apply: <br>
-		<input type="checkbox" name="qualifier" value="downpayment">I have a down payment<br>
-		<input type="checkbox" name="qualifier" value="outofstate">Out-of-state resident<br>
-		<input type="checkbox" name="qualifier" value="married">Married<br>
-		<input type="checkbox" name="qualifier" value="co-signed">Loan will be co-signed<br>
 		<br>
-	</form>
-	<form>
-		Additional Comments: <br>
-		<input type="textarea" name="comments"><br><br>
-		Applicant email address: <input type="email" name="emailaddress"><br><br>
-		Applicant telephone number: <input type="telephone" name="telephone"><br><br>
-		Applicant LinkedIn URL: <input type="text" name="linkedin"><br><br>
-	</form>
-	<input type="submit" value="Submit">
-</div>
+		<br>
+	</div>
 </body>
 </html>
