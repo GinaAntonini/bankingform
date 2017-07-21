@@ -4,5 +4,25 @@ body {
 	background-image: url("https://cdn.pixabay.com/photo/2017/04/07/17/18/pen-2211444_1280.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
+}
+
+.sitename {
+	text-align: center;
+	font-family: 'Permanent Marker';
+	font-size: 50px;
+}
+
+h1 {
+	font-family: 'Permanent Marker';
+	font-size: 30px;
+}
+
+#wrapper {
+	padding-left: 80px;
+}
+
+input {
+	box-shadow: 1px 2px 3px 1px
 }
 
