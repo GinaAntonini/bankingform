@@ -1,4 +1,4 @@
-/*GENERAL STYLING*/
+/*BODY STYLING*/
 
 body {
 	background-image: url("https://cdn.pixabay.com/photo/2017/04/07/17/18/pen-2211444_1280.jpg");
@@ -7,22 +7,30 @@ body {
 	background-attachment: fixed;
 }
 
+h1 {
+	font-family: 'Permanent Marker';
+	font-size: 30px;
+}
+
+/*POSITIONING*/
+
+#wrapper {
+	padding-left: 170px;
+}
+
 .sitename {
 	text-align: center;
 	font-family: 'Permanent Marker';
 	font-size: 50px;
 }
 
-h1 {
-	font-family: 'Permanent Marker';
-	font-size: 30px;
-}
-
-#wrapper {
-	padding-left: 80px;
-}
+/*INPUT BOX STYLING*/
 
 input {
 	box-shadow: 1px 2px 3px 1px
 }
 
+#textarea {
+  width: 300px;
+  height: 150px;
+}
